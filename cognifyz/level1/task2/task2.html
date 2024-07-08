@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div class="buttonchange">
+        <h3 class="heading">Basic Button that changes it's colour when clicked!</h3>
+        <button id="buttonid" class="colourchange">Click Me</button>
+    </div>
+    <hr>
+    <div class="alertbox">
+        <h3>Displaying an alert box with greeting message.</h3>
+        <button onclick="Greeting()">Greetings!</button>
+    </div>
+    <hr> 
+    <div class="calculator">
+        <h3>Calculator</h3>
+        <input type="text" id="result" class="result" disabled>
+        <div class="keys">
+            <button onclick="appendToResult('7')">7</button>
+            <button onclick="appendToResult('8')">8</button>
+            <button onclick="appendToResult('9')">9</button>
+            <button onclick="appendToResult('+')">+</button>
+            <button onclick="appendToResult('4')">4</button>
+            <button onclick="appendToResult('5')">5</button>
+            <button onclick="appendToResult('6')">6</button>
+            <button onclick="appendToResult('-')">-</button>
+            <button onclick="appendToResult('1')">1</button>
+            <button onclick="appendToResult('2')">2</button>
+            <button onclick="appendToResult('3')">3</button>
+            <button onclick="appendToResult('*')">*</button>
+            <button onclick="appendToResult('0')">0</button>
+            <button onclick="clearResult()">C</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="appendToResult('/')">/</button>
+        </div>
+    </div>
+<script src="task2.js"></script>
+</body>
+</html>
